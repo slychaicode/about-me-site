@@ -11,6 +11,3 @@ The site is built with [React](https://reactjs.org/) and [Tailwind CSS](https://
 
 ## Why
 While my LinkedIn account is under verification, I built this as a straightforward way to share my experience, background, and current direction!
-
-## License
-This project is open source and available under the [MIT License](LICENSE).
