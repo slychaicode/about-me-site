@@ -37,7 +37,7 @@ function App() {
               href="/KimSpaven_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black transition"
+              className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-950 transition"
             >
               View Resume
             </a>
@@ -45,7 +45,7 @@ function App() {
               href="https://github.com/slychaicode"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black transition"
+              className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-950 transition"
             >
               GitHub
             </a>
