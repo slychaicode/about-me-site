@@ -19,7 +19,7 @@ export default function Gear({ unlockNext }) {
   };
 
   return (
-    <section className="min-h-screen w-full flex items-center justify-center px-6 text-white">
+    <section className="w-full max-w-4xl px-6 text-white text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -31,29 +31,27 @@ export default function Gear({ unlockNext }) {
           ↟ Gear
         </h2>
 
-        {Object.entries(skills).map(([category, items]) => (
-          <div key={category} className="space-y-4">
-            <h3 className="text-lg font-semibold text-slate-200">
-              {category}
-            </h3>
-            <div className="flex flex-wrap gap-3">
-              {items.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 rounded-full border border-white/20 bg-white/5 text-sm text-slate-300 hover:bg-white/10 transition"
-                >
-                  {skill}
-                </span>
-              ))}
+        <div className="space-y-12 max-w-2xl mx-auto">
+          {Object.entries(skills).map(([category, items]) => (
+            <div key={category} className="space-y-4 text-center">
+              <h3 className="text-lg font-semibold text-slate-200">{category}</h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                {items.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 rounded-full border border-white/20 bg-white/5 text-sm text-slate-300 hover:bg-white/10 transition"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
-        <ClimbButton
-          target="#ascent-1"
-          label="Climb Higher"
-          unlockNext={unlockNext}
-        />
+        
+        <ClimbButton target="#ascent-1" label="Climb Higher" />
+                
       </motion.div>
     </section>
   );

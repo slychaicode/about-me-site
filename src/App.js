@@ -29,55 +29,14 @@ function App() {
     <PasswordGate>
         <main className="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-900 text-white px-6 py-16 space-y-32">
 
-          {unlockedSections.includes("summit") && (
-            <section id="summit">
-              <Summit /> 
-            </section>
-          )}
-
-          {unlockedSections.includes("ascent-4") && (
-            <section id="ascent-4">
-              <AscentFour unlockNext={() => unlockSection("summit")} /> 
-            </section>
-          )}
-
-          {unlockedSections.includes("ascent-3") && (
-            <section id="ascent-3">
-              <AscentThree unlockNext={() => unlockSection("ascent-4")} /> 
-            </section>
-          )}
-
-          {unlockedSections.includes("ascent-2") && (
-            <section id="ascent-2">
-              <AscentTwo unlockNext={() => unlockSection("ascent-3")} /> 
-            </section>
-          )}
-
-          {unlockedSections.includes("ascent-1") && (
-            <section id="ascent-1">
-              <AscentOne unlockNext={() => unlockSection("ascent-2")} /> 
-            </section>
-          )}
-
-
-          {unlockedSections.includes("gear") && (
-            <section id="gear">
-              <Gear unlockNext={() => unlockSection("ascent-1")} /> 
-            </section>
-          )}
-          
-          {unlockedSections.includes("basecamp") && (
-            <section id="basecamp">
-              <Basecamp unlockNext={() => unlockSection("gear")} /> 
-            </section>
-          )}
-
-
-          {unlockedSections.includes("trailhead") && (
-            <section id="trailhead">
-              <Trailhead unlockNext={() => unlockSection("basecamp")} /> 
-            </section>
-          )}
+          <section id="summit" className="min-h-screen flex items-center justify-center"> <Summit /> </section>
+          <section id="ascent-4" className="min-h-screen flex items-center justify-center"> <AscentFour /> </section>
+          <section id="ascent-3" className="min-h-screen flex items-center justify-center"> <AscentThree /> </section>
+          <section id="ascent-2" className="min-h-screen flex items-center justify-center"> <AscentTwo /> </section>
+          <section id="ascent-1" className="min-h-screen flex items-center justify-center"> <AscentOne /> </section>
+          <section id="gear" className="min-h-screen flex items-center justify-center"> <Gear /> </section>
+          <section id="basecamp" className="min-h-screen flex items-center justify-center"> <Basecamp /> </section>
+          <section id="trailhead" className="min-h-screen flex items-center justify-center"> <Trailhead /> </section>
             
         </main>
     </PasswordGate>

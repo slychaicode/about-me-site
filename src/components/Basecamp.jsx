@@ -3,7 +3,7 @@ import ClimbButton from "./ClimbButton";
 
 export default function Basecamp({ unlockNext }) {
   return (
-    <section className="min-h-screen w-full flex items-center justify-center px-6 text-white">
+    <section className="w-full max-w-4xl px-6 text-white text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
