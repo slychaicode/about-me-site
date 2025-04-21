@@ -8,7 +8,15 @@ function PasswordGate({ children }) {
     e.preventDefault();
     if (password === process.env.REACT_APP_SITE_PASSWORD) {
       setUnlocked(true);
-    } else {
+
+      setTimeout(() => {
+        const el = document.querySelector("#trailhead");
+        if (el){
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+    else {
       alert("Incorrect password");
     }
   };
