@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ClimbButton from "./ClimbButton";
 
-export default function AscentFour() {
+export default function AscentFour({unlockNext}) {
   return (
     <section className="w-full max-w-4xl mx-auto px-6 py-24 text-white">
       <motion.div
@@ -20,8 +20,12 @@ export default function AscentFour() {
             <li>Highlight 4 will be here</li>
             <li>Highlight 5 will be here</li>
         </ul>
-        
-        <ClimbButton target="#summit" label="Climb Higher" />
+
+        <ClimbButton
+            target="#summit"
+            label="Climb Higher" 
+            unlockNext={unlockNext}
+        />
                 
       </motion.div>
     </section>

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 
-export default function ClimbButton({ target = "#gear", label = "Climb Higher" }) {
+export default function ClimbButton({ target = "#gear", label = "Climb Higher" , unlockNext}) {
   const handleClick = () => {
+    if(unlockNext) unlockNext();
     const el = document.querySelector(target);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ClimbButton from "./ClimbButton";
 
-export default function Basecamp() {
+export default function Basecamp({unlockNext}) {
   return (
     <section className="w-full max-w-3xl mx-auto px-6 py-24 text-white">
       <motion.div
@@ -24,8 +24,12 @@ export default function Basecamp() {
           Intro sentence here. 
           More intro here.
         </p>
-        
-        <ClimbButton target="#gear" label="Climb Higher" />
+
+        <ClimbButton
+            target="#gear"
+            label="Climb Higher" 
+            unlockNext={unlockNext}
+        />
                 
       </motion.div>
     </section>
