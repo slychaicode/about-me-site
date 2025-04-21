@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ClimbButton from "./ClimbButton";
 
-export default function Gear({unlockNext}) {
+export default function Gear({ unlockNext }) {
   const skills = {
     "Leadership & Strategy": [
       "Skill 1",
@@ -10,27 +10,22 @@ export default function Gear({unlockNext}) {
       "Roadmapping",
     ],
     "Team Planning": [
-        "Skill 1",
-        "Skill 2",
-        "Asana",
-        "Jira",
+      "Skill 1",
+      "Skill 2",
+      "Asana",
+      "Jira",
     ],
-    "Engineering & Tools": [
-      "React",
-      "Git",
-      "AWS",
-      "Figma",
-    ],
+    "Engineering & Tools": ["React", "Git", "AWS", "Figma"],
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto px-6 py-24 text-white">
+    <section className="min-h-screen w-full flex items-center justify-center px-6 text-white">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="space-y-12"
+        className="max-w-4xl space-y-12"
       >
         <h2 className="text-sm uppercase tracking-widest text-slate-400">
           ↟ Gear
@@ -55,11 +50,10 @@ export default function Gear({unlockNext}) {
         ))}
 
         <ClimbButton
-            target="#ascent-1"
-            label="Climb Higher" 
-            unlockNext={unlockNext}
+          target="#ascent-1"
+          label="Climb Higher"
+          unlockNext={unlockNext}
         />
-                
       </motion.div>
     </section>
   );
