@@ -12,7 +12,7 @@ function App() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-lg w-full max-w-2xl text-center px-8 py-12 mt-6 animate-floating"
+          className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-lg w-full max-w-2xl text-center px-8 py-12 mt-6"
         >
           <header className="mb-10">
             <motion.h1
