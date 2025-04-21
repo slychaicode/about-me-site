@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ClimbButton from "./ClimbButton";
 
 export default function AscentThree() {
   return (
@@ -19,6 +20,9 @@ export default function AscentThree() {
             <li>Highlight 4 will be here</li>
             <li>Highlight 5 will be here</li>
         </ul>
+        
+        <ClimbButton target="#ascent-4" label="Climb Higher" />
+                
       </motion.div>
     </section>
   );

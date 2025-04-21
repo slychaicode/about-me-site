@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ClimbButton from "./ClimbButton";
 
 export default function Basecamp() {
   return (
@@ -23,6 +24,9 @@ export default function Basecamp() {
           Intro sentence here. 
           More intro here.
         </p>
+        
+        <ClimbButton target="#gear" label="Climb Higher" />
+                
       </motion.div>
     </section>
   );

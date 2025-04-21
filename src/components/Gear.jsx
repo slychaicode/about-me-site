@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ClimbButton from "./ClimbButton";
 
 export default function Gear() {
   const skills = {
@@ -52,6 +53,9 @@ export default function Gear() {
             </div>
           </div>
         ))}
+        
+        <ClimbButton target="#ascent-1" label="Climb Higher" />
+                
       </motion.div>
     </section>
   );
