@@ -1,4 +1,5 @@
 import PasswordGate from "./components/PasswordGate";
+import { motion } from "framer-motion";
 
 function App() {
 
