@@ -9,7 +9,7 @@ export default function Basecamp({ unlockNext }) {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="max-w-3xl space-y-6 text-center"
+        className="space-y-6 text-center"
       >
         <h2 className="text-sm uppercase tracking-widest text-slate-400">
           ↟ Basecamp
