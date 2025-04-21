@@ -51,7 +51,7 @@ function App() {
 
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="/resume.pdf"
+              href="/KimSpaven_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black transition focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-950"
