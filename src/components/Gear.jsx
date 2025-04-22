@@ -14,18 +14,19 @@ export default function Gear({ unlockNext }) {
       "Sprint Planning",
       "Roadmap Execution",
       "Prioritization",
+      "Stakeholder Demos",
       "Asana",
       "Jira",
-      "Stakeholder Demos",
+      "Figma",
     ],
     "Engineering Tools & Infra": [
       "Git",
       "React",
       "Python",
-      "Zapier",
-      "Figma",
-      "PowerBI",
       "AWS",
+      "Vercel",
+      "PowerBI",
+      "Zapier",
     ],
   };
 

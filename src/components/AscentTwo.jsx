@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ClimbButton from "./ClimbButton";
 
-export default function AscentTwo({ unlockNext, bullets = [] }) {
+export default function AscentTwo({ unlockNext, bullets = [], description }) {
   return (
     <section className="w-full max-w-4xl px-6 text-white text-center">
       <motion.div
@@ -17,6 +17,11 @@ export default function AscentTwo({ unlockNext, bullets = [] }) {
         <h3 className="text-lg font-semibold text-slate-200">
           Engineer II – Modeling & Simulation, BAE Systems (2018)
         </h3>
+
+        <p className="text-slate-400 text-sm leading-relaxed max-w-xl mx-auto">
+          {description}
+        </p>
+
         <ul className="list-disc list-inside space-y-2 text-slate-300 text-sm leading-relaxed">
           
           {Array.isArray(bullets) &&

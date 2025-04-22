@@ -19,6 +19,11 @@ export default function Summit() {
         </h3>
 
         <p className="text-slate-300 text-sm leading-relaxed max-w-lg mx-auto">
+        What I love most about this role at Asana is that it brings together everything I've enjoyed in my career — collaborating, mentoring, and helping shape how teams work. 
+        And doing that by building a collaboration platform? That hits in a very cool, very meta way.
+        </p>
+
+        <p className="text-slate-300 text-sm leading-relaxed max-w-lg mx-auto">
           If you're interested in chatting more or learning about how I build teams, lead technical direction, and scale orgs with clarity and warmth — let’s connect.
         </p>
 

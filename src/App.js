@@ -19,6 +19,7 @@ function App() {
 
   const [unlockedSections, setUnlockedSections] = useState(["trailhead"]);
   const [highlights, setHighlights] = useState(null);
+  const [ascentDescriptions, setAscentDescriptions] = useState(null);
 
   const unlockSection = (id) => {
     if(!unlockedSections.includes(id)){
@@ -33,6 +34,12 @@ function App() {
       .catch((err) => console.error("Error loading highlights:", err));
   }, []);
 
+  useEffect(() => {
+    fetch(process.env.REACT_APP_ASCENT_DESCRIPTIONS_URL)
+      .then((res) => res.json())
+      .then((data) => setAscentDescriptions(data));
+  }, []);
+
   return (
     <PasswordGate>
         <main className="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-900 text-white px-6 py-16 space-y-32">
@@ -41,19 +48,31 @@ function App() {
 
 
           <section id="ascent-4" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0">
-            <AscentFour bullets={highlights?.ascentFour || []} />
+            <AscentFour 
+              description={ascentDescriptions?.ascentFour || ""}
+              bullets={highlights?.ascentFour || []} 
+            />
           </section>
 
           <section id="ascent-3" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> 
-            <AscentThree bullets={highlights?.ascentThree || []} />
+            <AscentThree
+              description={ascentDescriptions?.ascentThree || ""}
+              bullets={highlights?.ascentThree || []} 
+            />
           </section>
 
           <section id="ascent-2" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> 
-            <AscentTwo bullets={highlights?.ascentTwo || []} />
+            <AscentTwo 
+              description={ascentDescriptions?.ascentTwo || ""}
+              bullets={highlights?.ascentTwo || []}
+            />
           </section>
           
           <section id="ascent-1" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0">
-            <AscentOne bullets={highlights?.ascentOne || []} />
+            <AscentOne
+              description={ascentDescriptions?.ascentOne || ""}
+              bullets={highlights?.ascentOne || []}
+            />
           </section>
 
 
