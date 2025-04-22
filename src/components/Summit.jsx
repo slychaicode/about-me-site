@@ -24,7 +24,7 @@ export default function Summit() {
 
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="/KimSpaven_Resume.pdf"
+            href={process.env.REACT_APP_RESUME_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black transition"
