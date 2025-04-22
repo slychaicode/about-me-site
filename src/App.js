@@ -11,8 +11,8 @@ import Trailhead from "./components/Trailhead";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/700.css";
+import "@fontsource/sora/400.css";
+import "@fontsource/sora/700.css";
 
 
 function App() {
