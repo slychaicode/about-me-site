@@ -31,6 +31,7 @@ export default function Summit() {
           >
             View Resume
           </a>
+
           <a
             href="https://github.com/slychaicode"
             target="_blank"
@@ -39,13 +40,14 @@ export default function Summit() {
           >
             GitHub
           </a>
-          {/* Optional extra */}
+
           <a
-            href={process.env.REACT_APP_EMAIL}
+            href={'mailto:${process.env.REACT_APP_EMAIL}'}
             className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black transition"
           >
             Email Me
           </a>
+
         </div>
       </motion.div>
     </section>
