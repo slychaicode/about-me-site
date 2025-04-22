@@ -29,14 +29,14 @@ function App() {
     <PasswordGate>
         <main className="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-900 text-white px-6 py-16 space-y-32">
 
-          <section id="summit" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Summit /> </section>
-          <section id="ascent-4" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentFour /> </section>
-          <section id="ascent-3" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentThree /> </section>
-          <section id="ascent-2" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentTwo /> </section>
-          <section id="ascent-1" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentOne /> </section>
-          <section id="gear" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Gear /> </section>
-          <section id="basecamp" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Basecamp /> </section>
-          <section id="trailhead" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Trailhead /> </section>
+          <section id="summit" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <Summit /> </section>
+          <section id="ascent-4" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <AscentFour /> </section>
+          <section id="ascent-3" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <AscentThree /> </section>
+          <section id="ascent-2" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <AscentTwo /> </section>
+          <section id="ascent-1" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <AscentOne /> </section>
+          <section id="gear" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <Gear /> </section>
+          <section id="basecamp" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <Basecamp /> </section>
+          <section id="trailhead" className="min-h-screen flex items-start md:items-center justify-center pt-30 md:pt-0"> <Trailhead /> </section>
             
         </main>
     </PasswordGate>
