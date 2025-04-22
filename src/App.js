@@ -9,7 +9,7 @@ import Summit from "./components/Summit";
 import Trailhead from "./components/Trailhead";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "@fontsource/sora/400.css";
 import "@fontsource/sora/700.css";
@@ -18,6 +18,7 @@ import "@fontsource/sora/700.css";
 function App() {
 
   const [unlockedSections, setUnlockedSections] = useState(["trailhead"]);
+  const [highlights, setHighlights] = useState(null);
 
   const unlockSection = (id) => {
     if(!unlockedSections.includes(id)){
@@ -25,17 +26,41 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    fetch(process.env.REACT_APP_HIGHLIGHTS_URL)
+      .then((res) => res.json())
+      .then((data) => setHighlights(data))
+      .catch((err) => console.error("Error loading highlights:", err));
+  }, []);
+
   return (
     <PasswordGate>
         <main className="min-h-screen bg-gradient-to-br from-indigo-950 via-slate-900 to-purple-900 text-white px-6 py-16 space-y-32">
 
           <section id="summit" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Summit /> </section>
-          <section id="ascent-4" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentFour /> </section>
-          <section id="ascent-3" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentThree /> </section>
-          <section id="ascent-2" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentTwo /> </section>
-          <section id="ascent-1" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <AscentOne /> </section>
+
+
+          <section id="ascent-4" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0">
+            <AscentFour bullets={highlights?.ascentFour || []} />
+          </section>
+
+          <section id="ascent-3" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> 
+            <AscentThree bullets={highlights?.ascentThree || []} />
+          </section>
+
+          <section id="ascent-2" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> 
+            <AscentTwo bullets={highlights?.ascentTwo || []} />
+          </section>
+          
+          <section id="ascent-1" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0">
+            <AscentOne bullets={highlights?.ascentOne || []} />
+          </section>
+
+
           <section id="gear" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Gear /> </section>
+
           <section id="basecamp" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Basecamp /> </section>
+
           <section id="trailhead" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Trailhead /> </section>
             
         </main>

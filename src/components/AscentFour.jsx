@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; 
 import ClimbButton from "./ClimbButton";
 
-export default function AscentFour({ unlockNext }) {
+export default function AscentFour({ unlockNext, bullets = [] }) {
   return (
     <section className="w-full max-w-4xl px-6 text-white text-center">
       <motion.div
@@ -18,11 +18,12 @@ export default function AscentFour({ unlockNext }) {
           Advanced Technology Manager, BAE Systems (2022–present)
         </h3>
         <ul className="list-disc list-inside space-y-2 text-slate-300 text-sm leading-relaxed">
-          <li>Highlight 1 will be here</li>
-          <li>Highlight 2 will be here</li>
-          <li>Highlight 3 will be here</li>
-          <li>Highlight 4 will be here</li>
-          <li>Highlight 5 will be here</li>
+          
+          {Array.isArray(bullets) &&
+            bullets.map((item, i)=> (
+              <li key={i}>{item}</li>
+          ))}
+
         </ul>
 
         <ClimbButton
