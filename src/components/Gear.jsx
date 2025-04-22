@@ -3,19 +3,30 @@ import ClimbButton from "./ClimbButton";
 
 export default function Gear({ unlockNext }) {
   const skills = {
-    "Leadership & Strategy": [
-      "Skill 1",
-      "Skill 2",
+    "Org Design & Leadership": [
       "Hiring & Mentorship",
-      "Roadmapping",
+      "Org Scaling",
+      "Strategic Roadmapping",
+      "Stakeholder Alignment",
+      "Culture Building",
     ],
-    "Team Planning": [
-      "Skill 1",
-      "Skill 2",
+    "Product & Team Routines": [
+      "Sprint Planning",
+      "Roadmap Execution",
+      "Prioritization",
       "Asana",
       "Jira",
+      "Stakeholder Demos",
     ],
-    "Engineering & Tools": ["React", "Git", "AWS", "Figma"],
+    "Engineering Tools & Infra": [
+      "Git",
+      "React",
+      "Python",
+      "Zapier",
+      "Figma",
+      "PowerBI",
+      "AWS",
+    ],
   };
 
   return (
@@ -30,6 +41,10 @@ export default function Gear({ unlockNext }) {
         <h2 className="text-sm uppercase tracking-widest text-slate-400">
           ↟ Gear
         </h2>
+
+        <p className="text-slate-300 leading-relaxed text-lg">
+        Before we kick off the ascent up this metaphorical mountain, here's a look at the gear I've picked up along the way — core skills I've used as both an engineer and engineering manager at BAE Systems, plus a few from personal projects like this site, built with React and hosted on Vercel.
+        </p>
 
         <div className="space-y-12 max-w-2xl mx-auto">
           {Object.entries(skills).map(([category, items]) => (
