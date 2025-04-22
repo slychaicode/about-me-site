@@ -41,7 +41,7 @@ export default function Summit() {
           </a>
           {/* Optional extra */}
           <a
-            href="mailto:kim.spaven.business@gmail.com"
+            href={process.env.REACT_APP_EMAIL}
             className="px-4 py-2 text-sm border border-white rounded hover:bg-white hover:text-black transition"
           >
             Email Me
