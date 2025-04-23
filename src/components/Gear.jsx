@@ -20,8 +20,9 @@ export default function Gear({ unlockNext }) {
       "Figma",
     ],
     "Engineering Tools & Infra": [
-      "Git",
+      "JavaScript",
       "React",
+      "Git",
       "Python",
       "AWS",
       "Vercel",
