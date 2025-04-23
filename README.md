@@ -10,4 +10,4 @@ The site is built with [React](https://reactjs.org/) and [Tailwind CSS](https://
 - Hosted on Vercel
 
 ## Why
-While my LinkedIn account is under verification, I built this as a straightforward way to share my experience, background, and current direction!
+I built this as a straightforward way to share my experience, background, and current direction!
