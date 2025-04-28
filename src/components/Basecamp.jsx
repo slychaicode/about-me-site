@@ -21,8 +21,8 @@ export default function Basecamp({ unlockNext }) {
 
         <p className="text-slate-300 leading-relaxed text-lg">
           Hi! I’m Kim Spaven, currently an Advanced Technology Manager based in the U.S.
-          I'm making an intentional leap - pivoting from defense tech to tech industry and relocating from Philadelphia to Vancouver.
-          When I saw Asana's Technical Lead Manager role in Vancouver, it sparked this site - part portfolio, part personal introduction. 
+          I'm making an intentional leap - pivoting from defense tech into the broader tech industry and relocating internationally.
+          When I saw the opportunity to join Asana in either Vancouver or Reykjavík, it sparked this site - part portfolio, part personal introduction. 
         </p>
 
         <ClimbButton
