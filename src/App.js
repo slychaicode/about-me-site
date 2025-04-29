@@ -10,6 +10,7 @@ import Trailhead from "./components/Trailhead";
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 import "@fontsource/sora/400.css";
 import "@fontsource/sora/700.css";
