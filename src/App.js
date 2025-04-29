@@ -84,6 +84,7 @@ function App() {
           <section id="trailhead" className="min-h-screen flex items-start md:items-center justify-center pt-24 md:pt-0"> <Trailhead /> </section>
             
         </main>
+        <Analytics />
     </PasswordGate>
   );
 
